@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Memento</string>
+    <string name="title_activity_secondact">secondact</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_main2">MainActivity2</string>
+
+
+
+    <string name="welcome">Welcome to</string>
+
+
+
+    <string-array name="list">
+            <item>Apple</item>
+            <item>Banana</item>
+            <item>Orange</item>
+            <item>Grapes</item>
+    </string-array>
+
+
+    <string name="tap">Tap the screen each time you repeat the affirmation!</string>
+    <string name="affirm">Affirm your sense of hope</string>
+    <string name="love">I love myself for who I am</string>
+    <string name="worthy">I am worthy of love and happiness</string>
+    <string name="best">I am doing my best everyday</string>
+    <string name="describe">Describe yourself in ten words. Why do those words come to mind?</string>
+    <string name="inspire">What makes you feel the most inspired?</string>
+    <string name="care">What can you do today to take better care of yourself?</string>
+    <string name="safe">What comes to mind first when you think of what makes you feel safe?</string>
+    <string name="hard">Explain what’s hardest for you in as many words as it takes.</string>
+    <string name="loveletter">Write a love letter to yourself.</string>
+
+</resources>

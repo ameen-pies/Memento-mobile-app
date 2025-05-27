@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/greetings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/pink_border"
+                    android:text="Hey Doua"
+                    android:textAlignment="center">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="246dp"
+                    android:layout_height="34dp"
+                    android:layout_marginTop="4dp"
+                    android:text="Assess yourself now!"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/editTextText"
+            android:layout_width="match_parent"
+            android:layout_height="19dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="----------------------------------------------------------------------------"
+            android:textColor="#D3D3D3" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/love_border">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How are you feeling today?"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:paddingBottom="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:background="@drawable/whitee"
+                android:paddingTop="8dp">
+
+                <ImageView
+                    android:id="@+id/terrible"
+                    android:layout_width="20dp"
+                    android:layout_weight="1"
+                    android:layout_height="60dp"
+                    android:src="@mipmap/terrible_foreground"/>
+
+                <ImageView
+                    android:id="@+id/bad"
+                    android:layout_width="20dp"
+                    android:layout_weight="1"
+                    android:layout_height="60dp"
+                    android:src="@mipmap/bad_foreground"/>
+
+                <ImageView
+                    android:id="@+id/okay"
+                    android:layout_width="20dp"
+                    android:layout_weight="1"
+                    android:layout_height="60dp"
+                    tools:ignore="ContentDescription"
+                    android:src="@mipmap/okay_foreground"/>
+
+                <ImageView
+                    android:id="@+id/good"
+                    android:layout_width="20dp"
+                    android:layout_weight="1"
+                    android:layout_height="60dp"
+                    android:src="@mipmap/good_foreground"/>
+
+                <ImageView
+                    android:id="@+id/great"
+                    android:layout_width="20dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:src="@mipmap/great_foreground"/>
+
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="7dp"
+                android:layout_marginTop="8dp"
+                android:progressDrawable="@drawable/progress"
+                android:background="@color/white"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@drawable/best_border"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textFontWeight="@integer/material_motion_duration_long_2"
+                android:text="Are you able to focus on what you're doing?"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:paddingBottom="8dp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/focus">
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Better than usual"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:buttonTint="@color/black"
+                    />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Same as usual"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:buttonTint="@color/black"
+                    />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Less than usual"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:buttonTint="@color/black" />
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@drawable/worthy_border"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Do you feel capable of making decisions?"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textFontWeight="@integer/material_motion_duration_long_2"
+
+                android:paddingBottom="8dp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/decisions">
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="More so than usual"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:buttonTint="@color/black"
+                    />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Same as usual"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:buttonTint="@color/black" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Less so than usual"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:buttonTint="@color/black" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@drawable/love_border"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Do you feel happy or content?"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textFontWeight="@integer/material_motion_duration_long_2"
+
+                android:paddingBottom="8dp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/happiness">
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="More so than usual"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:buttonTint="@color/black"
+                    />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Same as usual"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:buttonTint="@color/black" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Less so than usual"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:buttonTint="@color/black" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@drawable/salmon_border"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How would you describe your stress levels?"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textFontWeight="@integer/material_motion_duration_long_2"
+                android:paddingBottom="8dp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/stress">
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Higher than usual"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:buttonTint="@color/black"
+                    />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Same as usual"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:buttonTint="@color/black" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lower so than usual"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:buttonTint="@color/black" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@drawable/best_border"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Do you feel motivated to start new tasks?"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textFontWeight="@integer/material_motion_duration_long_2"
+
+                android:paddingBottom="8dp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/motivation">
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="More motivated than usual"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:buttonTint="@color/black"
+                    />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Same as usual"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:buttonTint="@color/black" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Less motivated than usual"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:buttonTint="@color/black" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/nextbutton"
+            android:layout_width="164dp"
+            android:layout_height="47dp"
+            android:layout_gravity="center"
+            android:background="@drawable/searchview_border"
+            android:text="Next"
+            android:fontFamily="@font/notegular"
+            android:textColor="@color/black"
+            android:shadowColor="@color/black">
+        </Button>
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp">
+
+            <ImageView
+                android:id="@+id/progress_bar_1"
+                android:layout_width="0dp"
+                android:layout_height="10dp"
+                android:layout_weight="1"
+                android:background="@color/inactive"
+                android:layout_marginEnd="4dp"/>
+
+            <ImageView
+                android:id="@+id/progress_bar_2"
+                android:layout_width="0dp"
+                android:layout_height="11dp"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:background="@color/inactive" />
+
+            <ImageView
+                android:id="@+id/progress_bar_3"
+                android:layout_width="0dp"
+                android:layout_height="10dp"
+                android:layout_weight="1"
+                android:background="@color/inactive"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:text="@string/affirm"
+            android:textSize="35sp"
+            android:fontFamily="@font/bold" />
+
+        <TextView
+            android:id="@+id/tap"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:layout_marginBottom="25dp"
+            android:gravity="left"
+            android:text="@string/tap"
+            android:textSize="18sp"
+            android:fontFamily="@font/notegular" />
+
+        <!-- Fixed Button (No Theme Tint) -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/lovebutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/love_border"
+            android:fontFamily="@font/notegular"
+            android:text="@string/love"
+            android:textSize="17sp"
+            android:backgroundTint="@null" /> <!-- Disables theme tint -->
+
+        <!-- Apply same fix to other buttons -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/worthybutton"
+            android:layout_width="match_parent"
+            android:layout_height="86dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/worthy_border"
+            android:fontFamily="@font/notegular"
+            android:text="@string/worthy"
+            android:textSize="17sp"
+            android:backgroundTint="@null" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bestbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/best_border"
+            android:fontFamily="@font/notegular"
+            android:text="@string/best"
+            android:textSize="17sp"
+            android:backgroundTint="@null" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="195dp"
+            android:layout_marginTop="5dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/affirm_foreground"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/nextbutton"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#363737"
+            android:text="Next"
+            android:textSize="17sp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/searchview_border"
+            android:fontFamily="@font/bold"
+            android:backgroundTint="@null" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</ScrollView>

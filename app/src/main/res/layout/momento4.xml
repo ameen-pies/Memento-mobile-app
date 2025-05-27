@@ -1,0 +1,696 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fafcff"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Horizontal Layout with ImageView, Text, and Button -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/pfp"
+                    android:layout_width="26dp"
+                    android:layout_height="72dp"
+                    android:layout_weight="1"
+                    android:src="@mipmap/pfp_foreground" />
+
+                <LinearLayout
+                    android:layout_width="227dp"
+                    android:layout_height="80dp"
+                    android:orientation="vertical"
+                    android:padding="13dp">
+
+                    <TextView
+                        android:id="@+id/textName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/verybold"
+                        android:text="Doua Ben Rejab" />
+
+                    <TextView
+                        android:id="@+id/textPrompt"
+                        android:layout_width="171dp"
+                        android:layout_height="50dp"
+                        android:fontFamily="@font/bold"
+                        android:text="Hello!"
+                        android:textSize="11sp" />
+                </LinearLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/buttonOptions"
+                    android:text="bruh"
+                    android:layout_width="61dp"
+                    android:layout_height="59dp"
+                    android:background="@drawable/menubutton"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    app:backgroundTint="@null"
+                    app:icon="@mipmap/menu_foreground"
+                    app:iconPadding="0dp"
+                    app:iconSize="30dp"
+
+                    />
+            </LinearLayout>
+
+            <!-- Image + EditText Section -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="157dp"
+                android:background="@drawable/lavender_border"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="320dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@mipmap/girlfg" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/textQuote"
+                        android:layout_width="157dp"
+                        android:layout_height="80dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/bold"
+                        android:text="“Journaling is like whispering to one’s self and listening at the same time.”" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/notegular"
+                        android:text="-Mira Murray" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewMood"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/verybold"
+                    android:text="How are you today" />
+
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="8dp">
+
+                        <!-- Smile -->
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="12dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/smile_foreground"
+                                android:layout_width="74dp"
+                                android:layout_height="81dp"
+                                android:src="@mipmap/smile_foreground" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:fontFamily="@font/notegular"
+                                android:text="Smile"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <!-- Wow -->
+                        <LinearLayout
+
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="12dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/wow_foreground"
+                                android:layout_width="74dp"
+                                android:layout_height="81dp"
+                                android:src="@mipmap/wow_foreground" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:fontFamily="@font/notegular"
+                                android:text="Wow"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <!-- Haha -->
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="12dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/haha_foreground"
+                                android:layout_width="74dp"
+                                android:layout_height="81dp"
+                                android:src="@mipmap/haha_foreground" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:fontFamily="@font/notegular"
+                                android:text="Haha"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <!-- Grr -->
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="12dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/grr_foreground"
+                                android:layout_width="74dp"
+                                android:layout_height="81dp"
+                                android:src="@mipmap/grr_foreground" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:fontFamily="@font/notegular"
+                                android:text="Angry"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <!-- Sleepy -->
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="12dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/sleepy_foreground"
+                                android:layout_width="74dp"
+                                android:layout_height="81dp"
+                                android:src="@mipmap/sleepy_foreground" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:fontFamily="@font/notegular"
+                                android:text="Sleepy"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <!-- Hearts -->
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="12dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/hearts_foreground"
+                                android:layout_width="74dp"
+                                android:layout_height="81dp"
+                                android:src="@mipmap/hearts_foreground" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:fontFamily="@font/notegular"
+                                android:text="Love"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <!-- Confident -->
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="12dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/confident_foreground"
+                                android:layout_width="74dp"
+                                android:layout_height="81dp"
+                                android:src="@mipmap/confident_foreground" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:fontFamily="@font/notegular"
+                                android:text="Cool"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <!-- Confidant -->
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="12dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/confidant_foreground"
+                                android:layout_width="74dp"
+                                android:layout_height="81dp"
+                                android:src="@mipmap/confidant_foreground" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:fontFamily="@font/notegular"
+                                android:text="Confident"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <!-- Cry -->
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="12dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/cry_foreground"
+                                android:layout_width="74dp"
+                                android:layout_height="81dp"
+                                android:src="@mipmap/cry_foreground" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:fontFamily="@font/notegular"
+                                android:text="Cry"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="-35dp"
+                android:background="#E0E0E0" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="39dp" />
+
+
+            <!-- Main Content Layout -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <!-- Title Section -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <TextView
+                        android:layout_width="183dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/bold"
+                        android:text="Mood Tracker"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <!-- Time Period Buttons -->
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fillViewport="true"
+                        android:scrollbars="none">
+
+                        <LinearLayout
+                            android:layout_width="220dp"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="10dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/monthly"
+                                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                                android:layout_width="125dp"
+                                android:layout_height="40dp"
+                                android:layout_marginEnd="20dp"
+                                android:background="@drawable/menubutton"
+                                android:fontFamily="@font/bold"
+                                android:gravity="center"
+                                android:text="Monthly"
+                                android:textColor="@color/black"
+                                app:backgroundTint="@null"
+                                app:cornerRadius="40dp" />
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/weekly"
+                                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                                android:layout_width="125dp"
+                                android:layout_height="40dp"
+                                android:layout_marginEnd="20dp"
+                                android:background="@drawable/menubutton"
+                                android:fontFamily="@font/bold"
+                                android:gravity="center"
+                                android:text="Weekly"
+                                android:textColor="@color/black"
+                                app:backgroundTint="@null"
+                                app:cornerRadius="40dp" />
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/daily"
+                                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                                android:layout_width="125dp"
+                                android:layout_height="40dp"
+                                android:layout_marginEnd="20dp"
+                                android:background="@drawable/menubutton"
+                                android:fontFamily="@font/bold"
+                                android:gravity="center"
+                                android:text="Today"
+                                android:textColor="@color/black"
+                                app:backgroundTint="@null"
+                                app:cornerRadius="40dp" />
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </LinearLayout>
+
+                <!--dashboard-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="410dp"
+                    android:background="@drawable/menubutton"
+                    android:padding="10dp">
+
+                    <com.github.mikephil.charting.charts.LineChart
+                        android:id="@+id/dashboard_chart"
+                        android:layout_width="match_parent"
+                        android:layout_height="370dp"
+                        android:padding="10dp"
+                        />
+                </LinearLayout>
+
+
+                <!-- Add this after the LineChart section -->
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp" />
+
+                <!-- Grid Layout (2 columns, 3 rows) -->
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:columnCount="2"
+                    android:rowCount="3"
+
+                    >
+
+                    <!-- Item 1 -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="200dp"
+                        android:layout_columnSpan="2"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/peach"
+                        android:gravity="center_vertical|left"
+                        android:orientation="vertical"
+                        android:padding="20dp"
+
+                        >
+
+                        <!-- Title Text -->
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:fontFamily="@font/bold"
+                            android:gravity="left"
+                            android:text="Understand Your Emotions Better in Just 2 Minutes! 📢"
+                            android:textColor="#000000"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <!-- Subtitle Text -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="16dp"
+                            android:fontFamily="@font/notegular"
+                            android:gravity="left"
+                            android:text="You deserve to feel your best!"
+                            android:textColor="#000000"
+                            android:textSize="14sp" />
+
+                        <!-- Check Button -->
+                        <Button
+                            android:id="@+id/quizbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@android:color/transparent"
+                            android:fontFamily="@font/notegular"
+                            android:gravity="left"
+                            android:padding="7dp"
+                            android:text="Assess my well-being →"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+
+                            />
+                    </LinearLayout>
+                    <!-- Item 2 -->
+
+
+                    <!-- Repeat for Items 3-6 (adjust icons/text as needed) -->
+                    <!-- Item 3 -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="200dp"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/menubutton"
+                        android:gravity="center_vertical|left"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <!-- Title Text -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="8dp"
+                            android:fontFamily="@font/bold"
+                            android:text="Sleep Quality"
+                            android:textColor="#000000"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <!-- Subtitle Text -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="16dp"
+                            android:fontFamily="@font/notegular"
+                            android:gravity="center_vertical|left"
+                            android:text="Check Your Sleep\nQuality"
+                            android:textColor="#000000"
+                            android:textSize="14sp" />
+
+                        <!-- Check Button -->
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:fontFamily="@font/notegular"
+                            android:text="Coming soon..."
+                            android:textColor="#000000"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <!-- Item 4 -->
+                    <!-- Item 6 - Streaks -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="200dp"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/pink_border"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <!-- Fire Icon -->
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginBottom="8dp"
+                            android:src="@mipmap/fire_foreground" />
+
+                        <!-- Streak Counter -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:fontFamily="@font/bold"
+                            android:gravity="center"
+                            android:text="7 Days Streak!\nUnstoppable!"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+
+                            />
+                    </LinearLayout>
+
+                    <!-- Item 5 -->
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="200dp"
+                        android:layout_columnSpan="2"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/love_border"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+
+                        >
+
+                        <!-- Header -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="0dp"
+                            android:fontFamily="@font/bold"
+                            android:text="Daily Tasks"
+                            android:textColor="#000000"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/dailyTasksRecyclerView"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="10dp"
+                            android:clipToPadding="false"
+                            android:paddingBottom="8dp" />
+
+                        <!-- Check Button -->
+                        <Button
+                            android:id="@+id/clist"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:background="@android:color/transparent"
+                            android:fontFamily="@font/notegular"
+                            android:padding="20dp"
+                            android:text="Add new items →"
+                            android:textColor="#000000"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+
+                </GridLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="350dp"
+        app:itemIconSize="41dp"
+        android:layout_height="63dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center|bottom"
+        android:background="@drawable/white_border"
+        app:itemTextColor="@color/black"
+        app:menu="@menu/bottom_nav_menu"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

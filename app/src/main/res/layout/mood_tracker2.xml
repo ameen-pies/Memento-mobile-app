@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="358dp"
+                    android:layout_height="65dp"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/bold"
+                    android:text="Let's do some journaling to regulate our emotions!"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/editTextText"
+            android:layout_width="match_parent"
+            android:layout_height="19dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="----------------------------------------------------------------------------"
+            android:textColor="#D3D3D3" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/love_border">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textFontWeight="@integer/material_motion_duration_long_2"
+                android:fontFamily="@font/notegular"
+                android:layout_height="wrap_content"
+                android:text="@string/care"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:paddingBottom="8dp" />
+            <EditText
+                android:id="@+id/care"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:text=""
+                android:textColor="@color/black"
+                android:background="@drawable/edittext">
+            </EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/worthy_border">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textFontWeight="@integer/material_motion_duration_long_2"
+                android:fontFamily="@font/notegular"
+                android:layout_height="wrap_content"
+                android:text="@string/describe"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:paddingBottom="8dp" />
+
+            <EditText
+                android:id="@+id/describe"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edittext"
+                android:text=""
+                android:textColor="@color/black">
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/best_border">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textFontWeight="@integer/material_motion_duration_long_2"
+                android:fontFamily="@font/notegular"
+                android:layout_height="wrap_content"
+                android:text="@string/inspire"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:paddingBottom="8dp" />
+
+            <EditText
+                android:id="@+id/inspire"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:background="@drawable/edittext"
+                android:text=""
+                android:textColor="@color/black">
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/salmon_border">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textFontWeight="@integer/material_motion_duration_long_2"
+                android:fontFamily="@font/notegular"
+                android:layout_height="wrap_content"
+                android:text="@string/safe"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:paddingBottom="8dp" />
+            <EditText
+                android:id="@+id/safe"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:text=""
+                android:textColor="@color/black"
+                android:background="@drawable/edittext">
+            </EditText>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/pink_border">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:fontFamily="@font/notegular"
+                android:textFontWeight="@integer/material_motion_duration_long_2"
+                android:layout_height="wrap_content"
+                android:text="@string/hard"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:paddingBottom="8dp" />
+            <EditText
+                android:id="@+id/hard"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:text=""
+                android:textColor="@color/black"
+                android:background="@drawable/edittext">
+            </EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/lavender_border">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textFontWeight="@integer/material_motion_duration_long_2"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/notegular"
+                android:text="@string/loveletter"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:paddingBottom="8dp" />
+            <EditText
+                android:id="@+id/loveletter"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:text=""
+                android:textColor="@color/black"
+                android:background="@drawable/edittext">
+            </EditText>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/nextbutton"
+            android:layout_width="180dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/searchview_border"
+            android:textColor="@color/black"
+            android:fontFamily="@font/notegular"
+            android:text="Finish with affirmations!">
+        </Button>
+    </LinearLayout>
+
+
+</ScrollView>

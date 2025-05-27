@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="50dp"
+    android:background="#102227">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:fontFamily="@font/mid"
+        android:gravity="center"
+        android:text="@string/welcome"
+        android:textColor="@color/white"
+        android:textFontWeight="500"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/mid"
+        android:gravity="center"
+        android:text="Memento"
+        android:textColor="#085d8b"
+        android:textFontWeight="900"
+        android:textSize="45dp"
+
+        />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:fontFamily="@font/mid"
+        android:gravity="center"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:text="“Fill your paper with the breathings of your heart.\n— William Wordsworth”"
+        android:textColor="@color/white"
+        android:textFontWeight="900"
+        android:textSize="23dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:paddingLeft="130dp"
+        android:paddingRight="70dp"
+
+
+        >
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/start"
+            android:layout_width="163dp"
+            android:layout_height="58dp"
+            android:fontFamily="@font/bold"
+            android:gravity="center"
+            android:text="START"
+            android:textColor="@android:color/white"
+            android:textSize="18dp"
+            app:backgroundTint="#e3b057"
+            app:cornerRadius="20dp"
+
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="375dp"
+        app:srcCompat="@mipmap/front_foreground" />
+
+
+
+
+
+</LinearLayout>
