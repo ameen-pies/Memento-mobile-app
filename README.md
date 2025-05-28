@@ -19,7 +19,7 @@ To enable Firebase, replace the existing file:
 app/google-services.json
 with your own file downloaded from the Firebase Console.
 
-# Built With:
+# Built With
 
 -Android Studio
 
