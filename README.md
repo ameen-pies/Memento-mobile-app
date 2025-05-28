@@ -22,7 +22,9 @@ with your own file downloaded from the Firebase Console.
 # Built With:
 
 -Android Studio
+
 -Kotlin / Java
+
 -Firebase (Authentication, Firestore)
 
 
