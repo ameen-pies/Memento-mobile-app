@@ -21,10 +21,10 @@ with your own file downloaded from the Firebase Console.
 
 # Built With:
 
-Android Studio
-Kotlin / Java
-Firebase (Authentication, Firestore)
-Material Design
+-Android Studio
+-Kotlin / Java
+-Firebase (Authentication, Firestore)
+
 
 # Contributing
 Fork the repo and submit a pull request.
